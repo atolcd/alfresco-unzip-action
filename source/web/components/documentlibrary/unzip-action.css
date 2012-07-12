@@ -1,0 +1,78 @@
+.unzip-option-container label, .unzip-option-container input {
+  cursor: pointer;
+}
+
+.unzip-option-container table {
+  border-collapse: collapse;
+  table-layout : fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.unzip-option-container .middle-col {
+  border-left: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+}
+
+.unzip-option-container .selected {
+  background-color: #F4FAFF;
+}
+
+.unzip-option-container .tb-footer .selected {
+  background-color: #F4FAFF;
+  border-top: 1px dotted #DFDFDF;
+}
+
+/* Header */
+.unzip-option-container .tb-header {
+  cursor: default;
+  font-family: tahoma,arial,helvetica,clean,sans-serif;
+  font-size: 0.9em;
+}
+
+.unzip-option-container .tb-header .path {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.unzip-option-container .tb-header td {
+  padding: 5px 0;
+}
+
+/* Body */
+.unzip-option-container .tb-body td {
+  padding: 5px 0;
+}
+
+.unzip-option-container .other-space-icon {
+  background: url("./images/extract-to.png") no-repeat scroll center center transparent;
+  height: 128px;
+}
+
+.unzip-option-container .new-space-icon {
+  background: url("./images/extract-here-folder.png") no-repeat scroll center center transparent;
+  height: 128px;
+}
+
+.unzip-option-container .new-space-icon.unavailable {
+  background: url("./images/extract-here-folder-unavailable.png") no-repeat scroll center center transparent;
+  cursor: default;
+}
+
+.unzip-option-container .self-space-icon {
+  height: 128px;
+  background: url("./images/extract-here.png") no-repeat scroll center center transparent;
+}
+
+.unzip-option-container .self-space-icon.unavailable {
+  background: url("./images/extract-here-unavailable.png") no-repeat scroll center center transparent;
+  cursor: default;
+}
+
+
+/* Footer */
+.unzip-option-container .tb-footer td {
+  background-color: #F2F2F2;
+  border-top: 1px solid #DFDFDF;
+  padding: 5px 0;
+}

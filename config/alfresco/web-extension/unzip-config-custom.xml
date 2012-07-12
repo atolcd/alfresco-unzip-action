@@ -1,0 +1,33 @@
+<alfresco-config>
+
+	<!-- Document Library Custom Code config section -->
+	<config evaluator="string-compare" condition="DocLibCustom">
+		<!-- paramedit dependencies -->
+		<dependencies>
+			<css src="/components/documentlibrary/unzip-action.css" />
+			<js src="/components/documentlibrary/unzip-action-min.js" />
+		</dependencies>
+	</config>
+
+	<!-- Document Library Actions config section -->
+	<config evaluator="string-compare" condition="DocLibActions">
+		<!-- paramedit action -->
+		<actions>
+			<action id="unzip-action" type="javascript" label="actions.document.unzip" icon="unzip">
+				<param name="function">onUnzip</param>
+				<evaluator>evaluator.doclib.action.unzip</evaluator>
+			</action>
+		</actions>
+
+		<actionGroups>
+			<actionGroup id="document-browse">
+				<action index="400" id="unzip-action" />
+			</actionGroup>
+
+			<actionGroup id="document-details">
+				<action index="400" id="unzip-action" />
+			</actionGroup>
+		</actionGroups>
+	</config>
+
+</alfresco-config>

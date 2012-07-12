@@ -1,0 +1,8 @@
+<webscript>
+  <shortname>Unzip Action</shortname>
+  <description>Unzip content and folder from the archive</description>
+  <format default="json" />
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <url>/slingshot/doclib/action/unzip</url>
+</webscript>
