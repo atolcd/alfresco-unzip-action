@@ -7,7 +7,7 @@ Building the module
 -------------------
 Check out the project if you have not already done so 
 
-        git://github.com/atolcd/alfresco-unzip-action.git
+        git clone git://github.com/atolcd/alfresco-unzip-action.git
 
 An Ant build script is provided to build JAR file **OR** AMP files containing the custom files.  
 
@@ -49,4 +49,11 @@ Using the module
 
 LICENSE
 ---------------------
-This extension is licensed under `GNU Library or "Lesser" General Public License (LGPL)`.
+This extension is licensed under `GNU Library or "Lesser" General Public License (LGPL)`.  
+Created by: [Julien BERTHOUX] (https://github.com/jberthoux) and [Bertrand FOREST] (https://github.com/bforest)  
+
+
+Our company
+---------------------
+[Atol Conseils et Développements] (http://www.atolcd.com) is Alfresco [Gold Partner] (http://www.alfresco.com/partners/atol)  
+Follow us on twitter [ @atolcd] (https://twitter.com/atolcd)  
