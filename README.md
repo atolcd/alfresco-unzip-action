@@ -1,4 +1,4 @@
-"Unzip" Share action
+"Unzip" action for Alfresco Share
 ================================
 
 This extension allows you to add "Unzip" action in Alfresco Share Document Library web tier (available in both Document Library site and repository).  
