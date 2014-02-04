@@ -1,0 +1,58 @@
+<!--
+ * Copyright (C) 2013 Atol Conseils et Développements.
+ * http://www.atolcd.com/
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<extension>
+  <modules>
+    <module>
+      <id>Unzip Action</id>
+      <version>1.0.0</version>
+      <auto-deploy>true</auto-deploy>
+      <configurations>
+        <!-- Document Library Custom Code config section -->
+        <config evaluator="string-compare" condition="DocLibCustom">
+          <!-- Unzip dependencies -->
+          <dependencies>
+            <css src="/components/documentlibrary/unzip-action.css" />
+            <js src="/components/documentlibrary/unzip-action-min.js" />
+          </dependencies>
+        </config>
+
+        <!-- Document Library Actions config section -->
+        <config evaluator="string-compare" condition="DocLibActions">
+          <!-- Unzip action -->
+          <actions>
+            <action id="unzip-action" type="javascript" label="actions.document.unzip" icon="unzip">
+              <param name="function">onUnzip</param>
+              <evaluator>evaluator.doclib.action.unzip</evaluator>
+            </action>
+          </actions>
+
+          <actionGroups>
+            <actionGroup id="document-browse">
+              <action index="400" id="unzip-action" />
+            </actionGroup>
+
+            <actionGroup id="document-details">
+              <action index="400" id="unzip-action" />
+            </actionGroup>
+          </actionGroups>
+        </config>
+      </configurations>
+    </module>
+  </modules>
+</extension>
